@@ -7,7 +7,7 @@ tempfile.TemporaryFile
 如何你的應用程式需要一個暫存檔案來存儲資料，但不需要同其他程式共用，那麼用TemporaryFile函數創建暫存檔案是最好的選擇。
 
 其他的應用程式是無法找到或打開這個檔的，因為它並沒有引用檔案系統表。用這個函數創建的暫存檔案，關閉後會自動刪除。
-
+<br>
 import os
 import tempfile
 
@@ -29,7 +29,7 @@ try:
     print 'temp.name:', temp.name
 finally:
     temp.close()　　# Automatically cleans up the file
-
+</br>
 這個例子說明了普通創建檔的方法與TemporaryFile()的不同之處
 注意：用TemporaryFile()創建的檔沒有檔案名
 ################################################################################
