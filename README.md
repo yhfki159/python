@@ -33,6 +33,7 @@ finally:
 ################################################################################
 
 $ python tempfile_TemporaryFile.py
+
 Building a file name yourself:
 temp: <open file '/tmp/guess_my_name.14932.txt', mode 'w+b' at 0x1004481e0>
 temp.name: /tmp/guess_my_name.14932.txt
@@ -56,6 +57,7 @@ finally:
 ################################################################################
 
 $ python tempfile_TemporaryFile_binary.py
+
 如果你想讓檔以text模式運行，那麼在創建的時候要修改mode為'w+t'
 
 import tempfile
