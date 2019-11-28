@@ -33,7 +33,6 @@ finally:
 $ python tempfile_TemporaryFile.py  
 這個例子說明了普通創建檔的方法與TemporaryFile()的不同之處  
 注意：用TemporaryFile()創建的檔沒有檔案名  
-################################################################################
   
 Building a file name yourself:  
 temp: <open file '/tmp/guess_my_name.14932.txt', mode 'w+b' at 0x1004481e0>  
@@ -41,7 +40,9 @@ temp.name: /tmp/guess_my_name.14932.txt
 TemporaryFile:  
 temp: <open file '<fdopen>', mode 'w+b' at 0x1004486f0>  
 temp.name: <fdopen>  
-預設情況下使用w+b許可權創建檔，在任何平臺中都是如此，並且程式可以對它進行讀寫。  
+  
+預設情況下使用w+b許可權創建檔，在任何平臺中都是如此，並且程式可以對它進行讀寫。 
+################################################################################   
 ``` python
 import os
 import tempfile
